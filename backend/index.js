@@ -17,13 +17,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 // keep new routes above '/' and errorRoute
-app.get("/message", (req, res) => {
-  res.status(200).json({ message: "Hello from the server"} );
-})
+
 
 router.use(errorRoute);
 app.get('/', (req, res) => {
-  console.log("Homepage request");
+  res.status(200).json( { welcome: "Welcome to the home page!" } );
 });
 
 app.listen(3000, () => {
