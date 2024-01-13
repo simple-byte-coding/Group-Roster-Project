@@ -21,7 +21,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 router.use(errorRoute);
 app.get('/', (req, res) => {
-  res.status(200).json( { welcome: "Welcome to the home page!" } );
+  res.status(200).sendFile(path.join(__dirname, "views", "index.html"));
 });
 
 app.listen(3000, () => {
