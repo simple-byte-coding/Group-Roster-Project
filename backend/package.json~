@@ -1,0 +1,15 @@
+{
+  "name": "group-roster-project",
+  "version": "1.0.0",
+  "description": "group roster project full-stack group",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Full-Stack Group Roster Project",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^3.0.2"
+  }
+}
