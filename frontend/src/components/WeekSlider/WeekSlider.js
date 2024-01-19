@@ -2,6 +2,8 @@ import { useState } from 'react';
 
 /**
  * Component to display the slider for each days available items and.
+ * @param {FilterMode} filterModeState Is this filtered by grid or slider?
+ * @param {Date} currentWeekDay Tells the component which day to start rendering
  * 
  * Parent: 
  * Location: Home Page
@@ -14,7 +16,7 @@ import { useState } from 'react';
  * 
  */
 
-export default function ScheduleSlider({ filterModeState, currentDate, cardsList }) { // TODO Change this prop once we have our data model figured out
+export default function ScheduleSlider({ filterModeState, currentWeekDay, cardsList }) { // TODO Change this prop once we have our data model figured out
 
   return (
     <>
