@@ -17,7 +17,7 @@ be a part of this amazing group of individuals!
 
 ## Setup before running server
 
-Please install all the dependencies in /backend
+Please install all the dependencies in /main
 
 `npm install`
 
